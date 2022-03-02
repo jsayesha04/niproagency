@@ -1,23 +1,20 @@
 
 $(document).ready(function(){
 
-
 // go to top
 $(window).scroll(function() {
   var dictance = $(window).scrollTop();
+ $('.text').text(dictance);
 
   if (dictance > 700) {
-    $('.top').fadeIn();
+    $('.t_top').fadeIn();
   }
   else{
-     $('.top').fadeOut();
+     $('.t_top').fadeOut();
   };
 });
-  $('.top').on('click', function(){
+  $('.t_top').on('click', function(){
     $('html').animate( {scrollTop :0 } );
   });
 
-
-
 });
-
