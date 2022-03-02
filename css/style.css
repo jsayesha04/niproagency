@@ -651,17 +651,22 @@ header{
 	margin-right: 0;
 }
 /*footer end*/
-/* got to top start */
-.top{}
-.top i{
-	font-size: 45px;
-	color: #ccc;
-	transition: .4s ease;
+/* go to top start */
+.t_top{
 	position: fixed;
-	bottom: 30px;
-	right: 30px;
+	bottom: 40px;
+	right: 40px;
+	z-index: 1;
+	display: none;
 }
-.top i:hover {
+.t_top i{
+	color: #ccc;
+	font-size: 45px;
+	cursor: pointer;
+	transition: .4s ease;
+}
+
+.t_top i:hover{
 	transform: translatey(-8px);
 }
-/* got to top end */
+/* go to top end */
